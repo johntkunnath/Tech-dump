@@ -1,0 +1,7 @@
+'''
+MULTIPLICATION TABLE FOR 17
+'''
+num = input ( " Enter the number to be multiplied " )
+num = int(num)
+for i in range ( 1, 11):
+    print ( num , 'x' , num*i )
