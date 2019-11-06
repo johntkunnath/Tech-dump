@@ -1,0 +1,12 @@
+'''
+Mileage of the car
+'''
+start_value = input ( "Enter the starting value" )
+start_value = int(start_value)
+end_value = input ( "Enter the end value" )
+end_value = int(end_value)
+total_kms = end_value - start_value
+fuel = input ( " Enter how many litres of fuel used" )
+fuel = int(fuel)
+mileage = ( total_kms / fuel )
+print ( " Total mileage of the car is", mileage , " kms/lt " )
