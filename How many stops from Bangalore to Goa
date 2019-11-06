@@ -1,0 +1,17 @@
+'''
+How many stops from Bangalore to Goa
+'''
+start_value = input ( "Enter the starting value" )
+start_value = int(start_value)
+end_value = input ( "Enter the end value" )
+end_value = int(end_value)
+total_kms = end_value - start_value
+fuel = input ( " Enter how many litres of fuel used" )
+fuel = int(fuel)
+tank_cap = input( " Tank Capacity " )
+tank_cap = int(tank_cap)
+milage = ( total_kms / fuel )
+limited_kms = tank_cap * milage
+num_of_stops = 560 / limited_kms
+print ( " Total number of stops from Bangalore to Goa is" , num_of_stops )
+
