@@ -1,0 +1,14 @@
+'''
+Milage of car using functions
+'''
+
+def Mileage():
+    distance = end_value - start_value
+    mileage = distance / fuel_consumed
+    print ("Milage of the car is : " , round(mileage))
+
+#main starts here
+start_value = int(input("Enter start value : " ))
+end_value = int(input("Enter end value : " ))
+fuel_consumed = int(input("Enter the fuel consumed in litres : "))
+Mileage()
