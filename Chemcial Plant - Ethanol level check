@@ -1,0 +1,20 @@
+'''
+Chemcial Plant - Ethanol level check
+'''
+
+def main():
+    level_now = int(input("Enter the current level of Ethanol : "))
+    capacity_now = int(900)
+    action1(level_now, capacity_now)
+
+def action1(level, capacity):
+    if (level > (capacity * 0.8)):
+        print ("ALARM - Too much Ethanol")
+
+def action2(level, capacity):
+    if (level < (capacity * 0.2)):
+        print (" SMS - Buy some Ethanol")
+
+# Main starts from here
+main()
+
