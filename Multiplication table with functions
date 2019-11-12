@@ -1,0 +1,9 @@
+'''
+Multiplication Table with funtions
+'''
+def Multi_table():
+    for r in range(1,11):
+        print ( num, "x", r, "=", num*r)
+num = input("Enter number for Multiplication table : ")
+num = int(num)
+Multi_table()
