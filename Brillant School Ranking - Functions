@@ -1,0 +1,23 @@
+def main():
+    english = int(input("Enter marks obtained in English : "))
+    science = int(input("Enter marks obtained in Science : "))
+    maths = int(input("Enter marks obtained in Maths : "))
+    if (english <= 80 ) and (science <= 90) and (maths <= 100):
+        total = (english + science + maths)
+        max_marks = int(270)
+    else :
+        print ("Invalid Input ")
+    check_rank(total, max_marks)
+
+def check_rank(total1, max_marks1 ):
+    if (total1 > (max_marks1 * 0.9)):
+        print ( " First Class ")
+    elif (total1 > (max_marks1 * 0.8)) & (total1 < (max_marks1 * 0.9)):
+        print ( " Second Class ")
+    elif (total1 < (max_marks1 * 0.35)):
+        print ( " Fail " )
+    else :
+        print ( " Average " )
+
+#main starts here
+main()
