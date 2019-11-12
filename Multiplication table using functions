@@ -1,0 +1,8 @@
+'''
+Multiplication Table with funtions for 17
+'''
+def Multi_table():
+    for r in range(1,11):
+        print ( num, "x", r, "=", num*r)
+num = 17
+Multi_table()
