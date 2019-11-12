@@ -1,3 +1,6 @@
+'''
+Brillant School Ranking
+'''
 def main():
     english = int(input("Enter marks obtained in English : "))
     science = int(input("Enter marks obtained in Science : "))
