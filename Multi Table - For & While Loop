@@ -1,0 +1,12 @@
+'''
+Multiplication with for & while loop
+'''
+num = int(input("Enter number : "))
+for r in range(0, 11):
+    print( num , "x" , r , "=" , num*r )
+
+num1 = int(input("Enter number : "))
+count = int(1)
+while (count < 11):
+    print ( num1 , "x" , count , "=", num1*count )
+    count += 1
