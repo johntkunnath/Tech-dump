@@ -1,0 +1,17 @@
+def main():
+    sentence = get_input()
+
+def get_input():
+    count = 1
+    while (count > 0):
+        sentence = input("enter a sentence")
+        if (sentence == ""):
+            break
+        else:
+            count += 1
+            sentence = str.split(sentence)
+            length = len(sentence)
+            print (length)
+    
+    
+main()
