@@ -1,0 +1,21 @@
+'''
+First 12 "even" Fibonacci numbers
+'''
+def main():
+    count = 0
+    a = 1
+    b = 1
+    while (count < 12) :
+        a += b
+        b += a
+        if ( a%2 == 0):
+            print ( a )
+            count += 1
+        elif ( b%2 == 0 ):
+            print ( b )
+            count += 1
+        else :
+            continue    
+  
+#main starts here
+main()
