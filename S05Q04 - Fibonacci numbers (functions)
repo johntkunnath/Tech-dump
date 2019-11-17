@@ -1,0 +1,30 @@
+def main():
+    num1 = get_number()
+    check_fibonacci(num1)
+    
+def get_number():
+    num1 = int(input("Enter number:"))
+    return num1
+    
+def check_fibonacci(num):
+    count = 1 
+    a = 1
+    b = 2
+    while count < num:
+        if (num == a ) or (num == b):
+            print ("It is a Fibonacci number" )
+            break
+        else :        
+            a += b
+            b += a
+            count += 1
+            if (b > num ):
+                if (num - a) > (b - num):
+                    print ( b )
+                    break
+                else :
+                    print ( a )
+                    break
+                
+main()
+            
