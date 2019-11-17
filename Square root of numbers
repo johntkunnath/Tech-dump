@@ -1,0 +1,22 @@
+'''
+Square root of numbers
+'''
+def main():
+    num = get_number()
+    
+def get_number():
+    count = 1
+    while (count > 0):
+        num = int(input("Enter number :"))
+        if (num < 1000 ) & (num > 99):
+            num = num ** 0.5
+            print ( num )
+            count += 1
+        elif ( num == 0 ):
+            break
+        else :
+            continue
+            
+#main starts here
+main()
+        
