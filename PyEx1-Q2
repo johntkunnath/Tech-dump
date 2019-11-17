@@ -1,0 +1,51 @@
+'''
+Brillant School Grades
+'''
+
+def main():
+    total_marks = get_marks()
+    check_grade(total_marks)
+    
+def get_marks():
+    
+    eng_marks = int(input("Enter the marks in English : "))
+    science_theory_marks = int(input("Enter the marks in Science Theory marks : "))
+    science_practical_marks = int(input("Enter the marks in Science Practicals : "))
+    math_marks = int(input("Enter the marks in Maths : "))
+    if (eng_marks < 25):
+        total_marks = "Fail"
+        return total_marks
+    
+    total_science = science_theory_marks + science_practical_marks
+    if (total_science < 35)
+        total_marks = "Fail"
+        return total_marks
+    
+        if (science_theory_marks < 25 ):
+            total_marks = "Fail"
+            return total_marks
+      
+        if (science_practical_marks < 8):
+            total_marks = "Fail"
+            return total_marks
+     
+    if (math_marks < 35):
+        total_marks = "Fail"
+        return total_marks4
+        
+    total_marks = eng_marks + science_theory_marks + science_practical_marks + math_marks
+    return total_marks
+    
+def check_grade(marks):
+    sum_total = int(275)
+    if ( marks == "Fail" ):
+        print("Fail") 
+    elif ( marks > (sum_total * 0.9)):
+        print("Grade A")    
+    elif (marks > (sum_total * 0.8)) & (marks < (sum_total * 0.9)):
+        print("Grade B")
+    else :
+        print ( "Average" )
+        
+#main starts here
+main()
