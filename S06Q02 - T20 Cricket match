@@ -1,0 +1,43 @@
+def main():
+    score = get_input()
+    print ( "The total score is" , score )
+    
+def get_input():
+    score_counter = 1
+    dot_ball_counter = 0
+    score = 0
+    six_count = 0
+    four_count = 0
+    
+    while (score_counter > 0):
+        runs_hit = input( "enter a the no. of runs" )
+        if ( runs_hit == "" ):
+            score_counter += 1
+            strike_rate = score / (score_counter - 1)
+            print ()
+            print ( "Batsman is out" )
+            print ( "no of 6s = " , six_count )
+            print ( "no of 4s = " , four_count )
+            print ( "Bot balls = " , dot_ball_counter )
+            print ( "strike rate = " , strike_rate )
+            break
+        elif ( runs_hit == "."):
+            dot_ball_counter += 1
+            score_counter += 1
+            continue
+        elif ( int(runs_hit) < 7):
+            runs_hit = int(runs_hit)
+            score += runs_hit
+            score_counter += 1
+            if ( runs_hit == 6):
+                six_count += 1
+                continue
+            elif ( runs_hit == 4):
+                four_count += 1
+                continue
+        else :        
+            print ( " Invalid input " )
+            continue
+    return score
+            
+main()
