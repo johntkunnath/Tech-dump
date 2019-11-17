@@ -1,0 +1,19 @@
+def main():
+    num = get_number()
+    double_it(num)
+    
+def get_number():
+    num = int(input(" Enter number :"))
+    return num
+
+def double_it(number):
+    for r in range(1, number):
+        r = int(r ** 2)
+        if (r < number):
+            print ( r )
+        elif (r > number) :
+            break
+        
+#main starts from here
+
+main()
