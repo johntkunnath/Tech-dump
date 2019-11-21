@@ -1,0 +1,19 @@
+'''
+Sting Manupilation
+'''
+def main ():
+    fname = input("Enter first name :" )
+    lname = input("Enter last name :" )
+    results( fname , lname )
+
+def results ( f_name , l_name):
+    print ( "Name : ", f_name , "Surname : ", l_name )
+    print ( f_name.upper() , l_name.upper() )
+    print ( "-------------" , " ---------" )
+    print ( l_name,',' , f_name )
+    
+    
+
+main()
+    
+    
