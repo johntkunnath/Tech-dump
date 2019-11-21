@@ -1,0 +1,19 @@
+'''
+S08Q02 - STRING Manupilation
+'''
+num = int(input("Enter the number : " ))
+if (num < 10) & (num > 0):
+    num += 7
+    num = str(num)
+    print ( num[-1])
+elif ( num < 100 ) & (num > 9):
+    num= num ** 5
+    num = str (num)
+    print ( num[-1] )
+elif (num < 1000) & (num > 99):
+    num1 = int(input("Enter 2nd number:"))
+    num += num1
+    num = str(num)
+    print ( num[-3:])
+else :
+    print ()
