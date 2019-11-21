@@ -3,7 +3,7 @@ Enter long sentences for string manupilation
 '''
 
 def main():
-    Sent = input("Long Sentence fuck with : ")
+    Sent = input("Long Sentence : ")
     Manu_1( Sent )
 
 def Manu_1(Sentence):
