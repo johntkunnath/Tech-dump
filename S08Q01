@@ -1,0 +1,6 @@
+'''
+S08Q01 - length of nunmber
+'''
+num = input("Enter the length of number:")
+num = len(num)
+print ( num )
