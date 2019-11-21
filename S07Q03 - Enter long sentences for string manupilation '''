@@ -1,0 +1,18 @@
+'''
+Enter long sentences for string manupilation
+'''
+
+def main():
+    Sent = input("Long Sentence fuck with : ")
+    Manu_1( Sent )
+
+def Manu_1(Sentence):
+    print ( "Last Character: " , Sentence[-1])
+    print ( "Last 5 Characters : " , Sentence[-4:])
+    print ( "Character in the 2nd position is :" , Sentence[1] , "&" , "Character in the 5th position is :" , Sentence [4])
+    num = len(Sentence)
+    num /= 2
+    num = round(num)
+    print ( "Center Character :" , Sentence[num - 1] , "Center + 1 :", Sentence[num] , "Center - 1 :", Sentence[num - 2])
+
+main()
