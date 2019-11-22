@@ -1,0 +1,8 @@
+'''
+Search and replace
+'''
+sentence = input( "Enter sentence :" )
+search = input( "Enter search :" )
+replace = input( "Enter replace item:" )
+x = sentence.replace( search , replace )
+print (x)
