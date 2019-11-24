@@ -1,0 +1,13 @@
+'''
+S0AQ03 - Decending order from sample
+'''
+
+def main():
+    import random
+    x = list(range(300 , 326))
+    y = random.sample( x, 10)
+    y.sort(reverse = True)
+    print ( " THE WINNING CARD IS :", y[0])
+
+main()
+    
