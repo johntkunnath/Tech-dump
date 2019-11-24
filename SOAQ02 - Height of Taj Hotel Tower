@@ -1,0 +1,17 @@
+'''
+SOAQ02 - Height of Taj HOtel Tower
+'''
+def main():
+    import math
+    ang_1 = math.radians(25)
+    ang_2 = math.radians(65)
+    dist_gate = 100
+    height_of_taj = math.tan(ang_2)*(100)
+    dist = (height_of_taj / math.tan(ang_1)) - (100)
+    print ("Height of Taj Tower :" , round(height_of_taj, 2) , "yards")
+    print ("Distance from Gateway of India to Taj :" , round(dist,2) , "yards")
+
+main()
+    
+    
+    
