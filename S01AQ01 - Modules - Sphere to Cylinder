@@ -1,0 +1,18 @@
+'''
+S01A - Modules - Sphere to Cylinder
+'''
+def main():
+    r = int(input("Enter in radius of sphere :"))
+    cyl_vol = convert(r)
+
+def convert(rad_sphere):
+    import math
+    len_cyl = 0
+    rad_cyl = 3
+    vol_sphere = 0
+    vol_sphere = float((4/3 * (math.pi) * math.pow(rad_sphere,3))) 
+    vol_cyl = float(0.95*(vol_sphere))
+    len_cyl = float(vol_cyl / ((math.pi) * math.pow(rad_cyl, 2)))
+    print ( "The length of the cylinder :", round(len_cyl,2) )
+
+main()
