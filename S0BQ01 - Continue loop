@@ -1,0 +1,37 @@
+'''
+S0BQ01 - Continue loop
+'''
+def yes_loop():
+    count = 1
+    while (count > 0 ):
+        start = input("Do you wanna continue?" )
+        if ( start == "yes" ):
+            return True
+            break
+        
+        elif ( start == "no"):
+            continue
+        else :
+            continue
+
+yes_loop()
+
+
+
+'''
+S0AQ03 - Decending order from sample
+'''
+
+def main():
+    import S0BQ01
+    if __name__=="__main__":
+        z = S0BQ01.yes_loop()
+        print (z)
+        if ( z == True ):
+            import random
+            x = list(range(300 , 326))
+            y = random.sample( x, 10)
+            y.sort(reverse = True)
+            print ( " THE WINNING CARD IS :", y[0])
+
+main()
